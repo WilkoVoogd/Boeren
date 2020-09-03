@@ -8,7 +8,6 @@ public class Boerer {
     private final List<Player> players;
     private Maten teamOne;
     private Maten teamTwo;
-    private List<Maten> matenList;
 
     public Boerer(List<Player> players) {
         this.players = players;
@@ -21,7 +20,6 @@ public class Boerer {
         players.remove(two);
         this.teamOne = new Maten(one, two);
         this.teamTwo = new Maten(players.get(0), players.get(1));
-        matenList = Arrays.asList(teamOne, teamTwo);
     }
 
     private int getRandomInt(int bound) {
@@ -30,6 +28,6 @@ public class Boerer {
     }
 
     public List<Maten> getMatenList() {
-        return matenList;
+        return (Arrays.asList(teamOne, teamTwo));
     }
 }

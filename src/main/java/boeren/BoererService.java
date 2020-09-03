@@ -53,6 +53,6 @@ public class BoererService {
                 + " & "
                 + teamTwo.getPlayerTwo().getName());
 
-        Thread.sleep(99999);
+        Thread.sleep(10000);
     }
 }
